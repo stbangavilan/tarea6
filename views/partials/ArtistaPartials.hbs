@@ -1,0 +1,29 @@
+   <div class="card-deck" style="width: 30rem;">
+    <div class="card">
+        {{#if this.images.1.url}}
+           <img class="card-img-top" src="{{this.images.1.url}}" alt="Card image cap">
+           <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+
+                <a href="/albums/{{id}}">Ver Albums</a>
+
+                <p class="card-text"><small class="text-muted">{{genres}}</small></p>
+        </div>
+
+           
+        {{else}} 
+           <img class="card-img-top" src="/images/sin_imagen.png" alt="Card image cap"> 
+           <div class="card-body">
+                <h5 class="card-title">{{this.name}}  <p>(sin Imagen)</p> </h5>
+
+                <a href="/albums/{{id}}">Ver Albums</a>
+
+                <p class="card-text"><small class="text-muted">{{genres}}</small></p>
+        </div>
+        {{/if}}
+        
+    </div>
+</div>            
+               
+               
+            
